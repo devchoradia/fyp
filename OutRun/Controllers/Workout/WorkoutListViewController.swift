@@ -22,6 +22,7 @@ import UIKit
 import CoreData
 import CoreStore
 
+@available(iOS 13.0, *)
 class WorkoutListViewController: UITableViewController, ListSectionObserver, TabBarSelectionObserver {
     
     typealias ListEntityType = Workout

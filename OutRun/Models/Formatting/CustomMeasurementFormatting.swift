@@ -20,6 +20,7 @@
 
 import Foundation
 
+@available(iOS 13.0, *)
 class CustomMeasurementFormatting {
     
     static func string(forMeasurement measurement: NSMeasurement, type: FormattingMeasurementType = .auto, rounding: FormattingRoundingType = .twoDigits) -> String {

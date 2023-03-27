@@ -20,6 +20,8 @@
 
 import Foundation
 
+
+@available(iOS 13.0, *)
 class MeasurementUserPreference<UnitType> where UnitType: Unit {
     
     private let userPreference: UserPreference.Optional<Int>

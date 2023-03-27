@@ -21,6 +21,7 @@
 import UIKit
 import MobileCoreServices
 
+@available(iOS 13.0, *)
 class SettingsModel {
     
     public let title: String

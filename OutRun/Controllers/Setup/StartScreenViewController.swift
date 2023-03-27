@@ -20,6 +20,7 @@
 
 import UIKit
 
+@available(iOS 13.0, *)
 class StartScreenViewController: UIViewController {
     
     let headlineLabel = UILabel(
@@ -45,7 +46,7 @@ class StartScreenViewController: UIViewController {
         button.setTitleColor(.lightGray, for: .focused)
         button.titleLabel?.font = UIFont.systemFont(ofSize: 16, weight: .bold)
         button.layer.cornerRadius = 20
-        button.addTarget(self, action: #selector(startSetup), for: .touchUpInside)
+        button.addTarget(StartScreenViewController.self, action: #selector(startSetup), for: .touchUpInside)
         return button
     }()
     

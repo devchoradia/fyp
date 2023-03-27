@@ -20,6 +20,7 @@
 
 import UIKit
 
+@available(iOS 13.0, *)
 class TimeIntervalPickerSetting: InputViewSetting, UIPickerViewDelegate, UIPickerViewDataSource {
     
     let timeIntervalSelectionAction: ((TimeInterval, Setting) -> Void)?

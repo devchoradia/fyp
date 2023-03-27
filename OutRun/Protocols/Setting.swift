@@ -20,6 +20,7 @@
 
 import UIKit
 
+@available(iOS 13.0, *)
 protocol Setting {
     
     var tableViewCell: UITableViewCell { get }
@@ -32,6 +33,7 @@ protocol Setting {
     
 }
 
+@available(iOS 13.0, *)
 extension Setting {
     
     func refresh() {

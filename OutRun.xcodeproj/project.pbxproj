@@ -177,6 +177,11 @@
 		22FEA0B124CDDFF80007CA9C /* CustomByteFormatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FEA0B024CDDFF80007CA9C /* CustomByteFormatting.swift */; };
 		22FEA0B324CDE31E0007CA9C /* DebugController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FEA0B224CDE31E0007CA9C /* DebugController.swift */; };
 		50A16B63C6F23E2D1E6210BA /* Pods_OutRun.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2DC1601B9458B3FC1788F0E /* Pods_OutRun.framework */; };
+		C2AF127B29CFF8FE003EDA8A /* Wallt.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2AF127A29CFF8FE003EDA8A /* Wallt.storyboard */; };
+		C2AF127D29CFFAE0003EDA8A /* TestFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2AF127C29CFFAE0003EDA8A /* TestFile.swift */; };
+		C2AF127F29CFFB78003EDA8A /* testStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2AF127E29CFFB77003EDA8A /* testStoryboard.storyboard */; };
+		C2AF128229D00414003EDA8A /* WalletView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2AF128129D00414003EDA8A /* WalletView.swift */; };
+		C2AF128429D114D1003EDA8A /* SwapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2AF128329D114D1003EDA8A /* SwapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -391,6 +396,11 @@
 		22FEA0B224CDE31E0007CA9C /* DebugController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugController.swift; sourceTree = "<group>"; };
 		8C0699EE439FF3DC5E16B8E0 /* Pods-OutRun.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OutRun.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OutRun/Pods-OutRun.debug.xcconfig"; sourceTree = "<group>"; };
 		C1C8D965F1351F85D4E4F35D /* Pods-OutRun.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OutRun.release.xcconfig"; path = "Pods/Target Support Files/Pods-OutRun/Pods-OutRun.release.xcconfig"; sourceTree = "<group>"; };
+		C2AF127A29CFF8FE003EDA8A /* Wallt.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Wallt.storyboard; sourceTree = "<group>"; };
+		C2AF127C29CFFAE0003EDA8A /* TestFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestFile.swift; sourceTree = "<group>"; };
+		C2AF127E29CFFB77003EDA8A /* testStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = testStoryboard.storyboard; sourceTree = "<group>"; };
+		C2AF128129D00414003EDA8A /* WalletView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletView.swift; sourceTree = "<group>"; };
+		C2AF128329D114D1003EDA8A /* SwapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwapView.swift; sourceTree = "<group>"; };
 		D2DC1601B9458B3FC1788F0E /* Pods_OutRun.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OutRun.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -425,6 +435,8 @@
 				22A6ED6A23E18271006A3DD0 /* PlaceholderController.swift */,
 				2226A3BC240BF9AD00FF7A94 /* ProgressViewController.swift */,
 				22DDD319243B935C00FA262E /* ChangeLogViewController.swift */,
+				C2AF127C29CFFAE0003EDA8A /* TestFile.swift */,
+				C2AF127E29CFFB77003EDA8A /* testStoryboard.storyboard */,
 			);
 			path = General;
 			sourceTree = "<group>";
@@ -735,6 +747,7 @@
 		22B6CF7A22CA1589002D2FB0 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				C2AF127529CEFE4D003EDA8A /* Wallet */,
 				2229056B24DDE2FB0052ACFF /* General */,
 				22CBE0CD244861190009D9A7 /* Stats */,
 				2250D118239A706900DE31A3 /* Setup */,
@@ -940,6 +953,16 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		C2AF127529CEFE4D003EDA8A /* Wallet */ = {
+			isa = PBXGroup;
+			children = (
+				C2AF127A29CFF8FE003EDA8A /* Wallt.storyboard */,
+				C2AF128129D00414003EDA8A /* WalletView.swift */,
+				C2AF128329D114D1003EDA8A /* SwapView.swift */,
+			);
+			path = Wallet;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -969,7 +992,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1020;
-				LastUpgradeCheck = 1200;
+				LastUpgradeCheck = 1320;
 				ORGANIZATIONNAME = "Tim Fraedrich";
 				TargetAttributes = {
 					22B6CF5222CA0814002D2FB0 = {
@@ -1024,6 +1047,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2AF127B29CFF8FE003EDA8A /* Wallt.storyboard in Resources */,
+				C2AF127F29CFFB78003EDA8A /* testStoryboard.storyboard in Resources */,
 				22B1F13F22D61CF400C02973 /* LaunchScreen.storyboard in Resources */,
 				2291863A23679AA300929885 /* InfoPlist.strings in Resources */,
 				22FAB3B4253BAC450040CBB1 /* Changelog.strings in Resources */,
@@ -1100,6 +1125,7 @@
 				2298D2142345524C00344989 /* WorkoutBuilderTypeView.swift in Sources */,
 				22CBB44D2303FF5100DDA2E0 /* DistanceStatsView.swift in Sources */,
 				22AD5C3A233631C8001C7311 /* WorkoutBuilderReadinessIndicationView.swift in Sources */,
+				C2AF128429D114D1003EDA8A /* SwapView.swift in Sources */,
 				22558389242E94AE0043432F /* LoadingView.swift in Sources */,
 				22B2A89D230D298F00EF8558 /* LabelledDiagramView.swift in Sources */,
 				22CFE03F23AEFDE500F5E111 /* SetupSegementedControlView.swift in Sources */,
@@ -1141,6 +1167,7 @@
 				222AB94B243C725B000E8BB7 /* OutRunV3.swift in Sources */,
 				227EE7662349577F000C0D67 /* SettingsViewController.swift in Sources */,
 				22F23F3F2422C44200838B87 /* KeyboardAvoidanceSetting.swift in Sources */,
+				C2AF128229D00414003EDA8A /* WalletView.swift in Sources */,
 				228BD39023EB51910019C322 /* BackupDocumentPickerDelegate.swift in Sources */,
 				22F3318D23AA23DD006CB7E5 /* SetupSwitchView.swift in Sources */,
 				22AB2FB9233CD0EB002EF0DE /* LabelledDiagramViewDelegate.swift in Sources */,
@@ -1214,6 +1241,7 @@
 				22877542234A73060078CE12 /* LS.swift in Sources */,
 				22FEA0AB24CDD39C0007CA9C /* URL.swift in Sources */,
 				22BBDD3224D77C2B00225AE4 /* WorkoutBuilder+StepCounter.swift in Sources */,
+				C2AF127D29CFFAE0003EDA8A /* TestFile.swift in Sources */,
 				227ED84E240FAC460083EE96 /* EditWorkoutView.swift in Sources */,
 				22718E3B2592665200708D3B /* Contribution.swift in Sources */,
 				22E8969A23E6E6E40074D2BB /* TempDataTypes.swift in Sources */,
@@ -1371,7 +1399,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -1428,7 +1456,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -1447,14 +1475,15 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = QT27QDFZ7N;
+				DEVELOPMENT_TEAM = 8P9Z7LWM7V;
 				INFOPLIST_FILE = "$(SRCROOT)/OutRun/Support Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.3;
-				PRODUCT_BUNDLE_IDENTIFIER = de.tadris.OutRun;
+				PRODUCT_BUNDLE_IDENTIFIER = de.tadris.OutRun.ilakya;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
@@ -1471,14 +1500,15 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = QT27QDFZ7N;
+				DEVELOPMENT_TEAM = 8P9Z7LWM7V;
 				INFOPLIST_FILE = "$(SRCROOT)/OutRun/Support Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.3;
-				PRODUCT_BUNDLE_IDENTIFIER = de.tadris.OutRun;
+				PRODUCT_BUNDLE_IDENTIFIER = de.tadris.OutRun.ilakya;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;

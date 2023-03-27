@@ -21,6 +21,7 @@
 import UIKit
 
 /// WARNING: This class is not functional yet
+@available(iOS 13.0, *)
 class EditWorkoutPauseController: UITableViewController {
     
     var editController: EditWorkoutController?

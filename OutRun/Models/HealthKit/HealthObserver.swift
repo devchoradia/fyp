@@ -21,6 +21,7 @@
 import Foundation
 import HealthKit
 
+@available(iOS 13.0, *)
 enum HealthObserver {
     
     // MARK: Workout Observer

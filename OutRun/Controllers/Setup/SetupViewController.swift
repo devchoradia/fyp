@@ -20,6 +20,8 @@
 
 import UIKit
 
+@available(iOS 13.0, *)
+@available(iOS 13.0, *)
 class SetupViewController: UIViewController {
     
     let numberOfPages = 4

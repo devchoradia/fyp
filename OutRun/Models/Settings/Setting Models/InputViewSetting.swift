@@ -19,6 +19,7 @@
 //
 import UIKit
 
+@available(iOS 13.0, *)
 class InputViewSetting: NSObject, Setting, KeyboardAvoidanceSetting, UITextFieldDelegate {
     
     var section: SettingSection?

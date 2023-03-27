@@ -38,7 +38,7 @@ class DetailViewController: UIViewController {
     let closeButton: UIButton = {
         let button = UIButton()
         button.setImage(.close, for: .normal)
-        button.addTarget(self, action: #selector(close), for: .touchUpInside)
+        button.addTarget(DetailViewController.self, action: #selector(close), for: .touchUpInside)
         return button
     }()
     

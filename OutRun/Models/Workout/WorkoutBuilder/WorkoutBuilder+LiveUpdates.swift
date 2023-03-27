@@ -21,6 +21,7 @@
 import Foundation
 import CoreLocation
 
+@available(iOS 13.0, *)
 extension WorkoutBuilder {
     
     // MARK: Supporting Functions

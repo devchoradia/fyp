@@ -19,7 +19,9 @@
 //
 
 import UIKit
+import SwiftUI
 
+@available(iOS 13.0, *)
 class TabBarController: UITabBarController, UITabBarControllerDelegate {
     
     static var lastCurrent: TabBarController?
@@ -44,6 +46,43 @@ class TabBarController: UITabBarController, UITabBarControllerDelegate {
             selectedImage: .tabbarTimelineFilled
         )
         
+        
+        let walletController = TestFile()
+        let timelineLeft = NavigationController(rootViewController: walletController)
+        timelineLeft.tabBarItem = UITabBarItem(
+            title: LS["TabBar.Timeline"],
+            image: .tabbarTimeline,
+            selectedImage: .tabbarTimelineFilled
+        )
+        //let listControllerLeft = openSwiftUIScreen()
+        
+        
+        
+        // Create a reference to the the appropriate storyboard
+        
+        
+       // let storyboard = UIStoryboard(name: "testStoryboard", bundle: nil)
+         
+         
+
+
+        // Instantiate the desired view controller from the storyboard using the view controllers identifier
+        // Cast is as the custom view controller type you created in order to access it's properties and methods
+       // let listControllerLeft = storyboard.instantiateViewController(withIdentifier: "myID")
+        
+        
+        
+        //let timelineLeft = NavigationController(rootViewController: listControllerLeft)
+        
+        
+        let listControllerRight = WorkoutListViewController()
+        let timelineRight = NavigationController(rootViewController: listControllerRight)
+        timelineRight.tabBarItem = UITabBarItem(
+            title: LS["TabBar.Timeline"],
+            image: .tabbarTimeline,
+            selectedImage: .tabbarTimelineFilled
+        )
+        
         let settingsController = SettingsViewController()
         settingsController.settingsModelClosure = {
             return SettingsModel.main
@@ -56,7 +95,7 @@ class TabBarController: UITabBarController, UITabBarControllerDelegate {
         )
         settings.tabBarItem = settingsTabBarItem
         
-        self.viewControllers = [timeline, placeholder, settings]
+        self.viewControllers = [timeline, timelineLeft, placeholder, timelineRight, settings]
         
         addButton.layer.cornerRadius = 29
         addButton.backgroundColor = .accentColor
@@ -121,10 +160,9 @@ class TabBarController: UITabBarController, UITabBarControllerDelegate {
     override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
         super.traitCollectionDidChange(previousTraitCollection)
 
-        if #available(iOS 13.0, *) {
+        
             if previousTraitCollection?.hasDifferentColorAppearance(comparedTo: traitCollection) ?? false {
                 self.addButton.layer.borderColor = UIColor.foregroundColor.withAlphaComponent(0.2).cgColor
-            }
         }
     }
     
@@ -167,4 +205,16 @@ class TabBarController: UITabBarController, UITabBarControllerDelegate {
         }
     }
     
-}
+    
+    
+    /*
+    //trying to incorporate swiftUI
+    
+     @objc func openSwiftUIScreen() {
+     let swiftUIViewController = UIHostingController(rootView: WalletView())
+     self.navigationController?.pushViewController(swiftUIViewController, animated: true)
+     }
+     */
+    
+     }
+   

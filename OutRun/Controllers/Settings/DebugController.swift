@@ -21,6 +21,7 @@
 import UIKit
 import CoreStore
 
+@available(iOS 13.0, *)
 class DebugController: SettingsViewController {
     
     override func viewDidLoad() {

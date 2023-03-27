@@ -20,6 +20,7 @@
 
 import Foundation
 
+@available(iOS 13.0, *)
 class SettingSection {
     
     var model: SettingsModel?

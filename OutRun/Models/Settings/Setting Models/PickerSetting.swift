@@ -20,6 +20,7 @@
 
 import UIKit
 
+@available(iOS 13.0, *)
 class PickerSetting<Object: CustomStringConvertible>: InputViewSetting, UIPickerViewDelegate, UIPickerViewDataSource {
     
     let selectionAction: ((Object, Setting) -> Void)?

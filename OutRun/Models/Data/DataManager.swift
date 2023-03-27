@@ -23,6 +23,7 @@ import CoreStore
 import CoreLocation
 import HealthKit
 
+@available(iOS 13.0, *)
 struct DataManager {
     
     /// static optional instance of the local storage holding the workout data

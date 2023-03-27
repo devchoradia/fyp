@@ -21,6 +21,7 @@
 import UIKit
 import Charts
 
+@available(iOS 13.0, *)
 class WorkoutViewController: DetailViewController {
     
     var workout: Workout?
@@ -39,7 +40,7 @@ class WorkoutViewController: DetailViewController {
     let shareButton: UIButton = {
         let button = UIButton()
         button.setImage(.share, for: .normal)
-        button.addTarget(self, action: #selector(share), for: .touchUpInside)
+        button.addTarget(WorkoutViewController.self, action: #selector(share), for: .touchUpInside)
         return button
     }()
     

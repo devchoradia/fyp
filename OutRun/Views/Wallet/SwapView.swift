@@ -1,5 +1,5 @@
 //
-//  EditWorkoutView.swift
+//  [FILENAME]
 //
 //  OutRun
 //  Copyright (C) 2020 Tim Fraedrich <timfraedrich@icloud.com>
@@ -18,27 +18,16 @@
 //  along with this program.  If not, see <http://www.gnu.org/licenses/>.
 //
 
-import UIKit
+import SwiftUI
 
-@available(iOS 13.0, *)
-class EditWorkoutView: WorkoutActionView {
-    
-    init(controller: UIViewController, workout: Workout) {
-        super.init(title: { return LS["Edit"] }, controller: controller, workout: workout)
+struct SwapView: View {
+    var body: some View {
+        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
     }
-    
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
+}
+
+struct SwapView_Previews: PreviewProvider {
+    static var previews: some View {
+        SwapView()
     }
-    
-    override func action(button: UIButton) {
-        
-        let editController = EditWorkoutController()
-        editController.workout = self.workout
-        editController.controller = self.controller
-        
-        self.controller.showDetailViewController(NavigationController(rootViewController: editController), sender: self)
-        
-    }
-    
 }

@@ -20,6 +20,7 @@
 
 import UIKit
 
+@available(iOS 13.0, *)
 class DatePickerSetting: InputViewSetting {
     
     let dateSelectionAction: ((Date, Setting) -> Void)?
